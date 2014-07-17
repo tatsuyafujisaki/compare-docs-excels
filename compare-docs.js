@@ -1,5 +1,3 @@
-var wdPaneRevisions = 18
-
 if (WScript.Arguments.Length != 2) {
     WScript.Echo("Drag & drop two Microsoft Word files.")
 }
@@ -12,6 +10,8 @@ app.Application.CompareDocuments(doc1, doc2)
 
 doc1.Close()
 doc2.Close()
+
+var wdPaneRevisions = 18
 
 do {
     app.ActiveWindow.View.SplitSpecial = wdPaneRevisions
