@@ -1,7 +1,7 @@
 var wdPaneRevisions = 18
 
 if (WScript.Arguments.Length != 2) {
-    WScript.Echo("Please drag & drop two Microsoft Word files.")
+    WScript.Echo("Drag & drop two Microsoft Word files.")
 }
 
 var app = WScript.CreateObject("Word.Application")
