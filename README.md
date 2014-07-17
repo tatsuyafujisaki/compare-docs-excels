@@ -1,4 +1,4 @@
 compare-docs
 ============
 
-Compare two Microsoft Word files by drag-and-drop.
+Drag-and-drop two Microsoft Word files to compare.
