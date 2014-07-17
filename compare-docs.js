@@ -13,6 +13,7 @@ doc2.Close()
 
 var wdPaneRevisions = 18
 
+// Once is not enough
 do {
     app.ActiveWindow.View.SplitSpecial = wdPaneRevisions
 } while (app.ActiveWindow.View.SplitSpecial != wdPaneRevisions)
