@@ -1,5 +1,6 @@
 if (WScript.Arguments.Length != 2) {
     WScript.Echo("Please drag & drop two Microsoft Word files.");
+    WScript.Quit();
 }
 
 var app = WScript.CreateObject("Word.Application");
