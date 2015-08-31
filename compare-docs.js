@@ -1,11 +1,11 @@
-if (WScript.Arguments.Length != 2) {
-    WScript.Echo("Please drag & drop two Microsoft Word files.");
-    WScript.Quit();
+if (WScript.Arguments.length !== 2) {
+  WScript.Echo("Please drag & drop two Microsoft Word files.");
+  WScript.Quit();
 }
 
 var app = WScript.CreateObject("Word.Application");
-var doc1 = app.Documents.Open(WScript.Arguments(0));
-var doc2 = app.Documents.Open(WScript.Arguments(1));
+var doc1 = app.Documents.Open(WScript.Arguments.Item(0));
+var doc2 = app.Documents.Open(WScript.Arguments.Item(1));
 
 app.Application.CompareDocuments(doc1, doc2);
 
@@ -15,7 +15,7 @@ doc2.Close();
 var wdPaneRevisions = 18;
 
 do {
-    app.ActiveWindow.View.SplitSpecial = wdPaneRevisions;
-} while (app.ActiveWindow.View.SplitSpecial != wdPaneRevisions)
+  app.ActiveWindow.View.SplitSpecial = wdPaneRevisions;
+} while (app.ActiveWindow.View.SplitSpecial !== wdPaneRevisions)
 
 app.Visible = true;
