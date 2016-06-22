@@ -16,7 +16,7 @@ if (doc1.ProtectionType != wdNoProtection
   WScript.Quit();
 }
 
-// CompareDocuments(...) makes an error if either one of the two docs is read-only.
+// CompareDocuments(...) makes an error if either one of the two docs is protected.
 app.CompareDocuments(doc1, doc2);
 
 doc1.Close();
