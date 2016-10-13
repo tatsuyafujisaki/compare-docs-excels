@@ -1,5 +1,5 @@
 if (WScript.Arguments.length !== 2) {
-  WScript.Echo("Please drag & drop two Microsoft Word files.");
+  WScript.Echo("Please drop two Microsoft Word files.");
   WScript.Quit();
 }
 
