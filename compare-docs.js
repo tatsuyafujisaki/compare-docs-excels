@@ -1,11 +1,9 @@
-"use strict";
-
 if (WScript.Arguments.length !== 2) {
-  WScript.Echo("Please drop two Microsoft Word files.");
+  WScript.Echo('Please drop two Microsoft Word files.');
   WScript.Quit();
 }
 
-var app = WScript.CreateObject("Word.Application");
+var app = WScript.CreateObject('Word.Application');
 var doc1 = app.Documents.Open(WScript.Arguments.Item(0));
 var doc2 = app.Documents.Open(WScript.Arguments.Item(1));
 
