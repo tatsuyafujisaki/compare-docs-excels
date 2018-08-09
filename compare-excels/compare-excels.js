@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 function doubleQuote(s) {
   return '"' + s + '"';

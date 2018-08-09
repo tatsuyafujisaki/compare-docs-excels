@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 if (WScript.Arguments.length !== 2) {
   WScript.Echo('Please drop two Microsoft Word files.');
