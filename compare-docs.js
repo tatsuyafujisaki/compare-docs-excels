@@ -1,11 +1,13 @@
+"use strict";
+
 if (WScript.Arguments.length !== 2) {
   WScript.Echo('Please drop two Microsoft Word files.');
   WScript.Quit();
 }
 
 var app = WScript.CreateObject('Word.Application');
-var doc1 = app.Documents.Open(WScript.Arguments.Item(0));
-var doc2 = app.Documents.Open(WScript.Arguments.Item(1));
+var doc1 = app.Documents.Open(WScript.Arguments(0));
+var doc2 = app.Documents.Open(WScript.Arguments(1));
 
 var wdNoProtection = -1;
 
